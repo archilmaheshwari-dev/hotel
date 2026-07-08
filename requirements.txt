@@ -1,0 +1,16 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.6
+sqlalchemy>=2.0.35
+# psycopg2-binary is only needed when using Postgres (e.g. on Railway).
+# It commonly fails to build from source on Windows. Uncomment when deploying,
+# or install it separately with a prebuilt wheel: pip install psycopg2-binary --only-binary :all:
+# psycopg2-binary>=2.9.9
+pydantic>=2.9.2
+pydantic-settings>=2.5.2
+httpx>=0.27.2
+python-dotenv>=1.0.1
+stripe>=10.12.0
+groq>=0.11.0
+sentence-transformers>=3.3.0
+numpy>=2.1.0
+python-multipart>=0.0.12
